@@ -1,0 +1,46 @@
+ALGORITHM tableau
+VAR
+    T1,T2: ARRAY_OF INTEGER[20]; 
+   P1,P,n,m,i:INTEGER:=0
+   found=BOOLEAN;
+BEGIN
+   FOR i FROM 0 TO T1.length-1 STEP 1  DO
+       write("donner l'élément de tableau1")
+       read(t1[i])
+   END_FOR
+   FOR j FROM 0 TO n-1 STEP 1  DO
+       write("donner l'élément de tableau2")
+       read(t2[j])
+   END_FOR
+   p=0
+   FOR i FROM 0 TO T1.length STEP 1  DO
+       FOR j FROM 1 TO n STEP 1  DO
+           IF (T[i]!=T2[j]) THEN
+               P:=P+T1[i]
+           END_IF
+       END_FOR
+   END_FOR
+   write ("la somme est,"P)
+
+
+
+      FOR i FROM 0 TO T1.length-1 STEP 1  DO
+       write("donner l'élément de tableau1")
+       read(t1[i])
+   END_FOR
+   FOR j FROM 0 TO n-1 STEP 1  DO
+       write("donner l'élément de tableau2")
+       read(t2[j])
+   END_FOR
+   P1:=0
+   FOR i FROM 0 TO T1.length-1 STEP 1  DO
+       FOR j FROM 1 TO n STEP 1  DO
+           IF (T[i]==T2[j]) THEN
+               P1:=P1+T1[i]+T2[j]
+            
+           END_IF
+       END_FOR
+   END_FOR
+   write ("la somme est,"P1)
+  
+END
